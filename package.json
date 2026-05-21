@@ -1,0 +1,27 @@
+{
+  "name": "solana-trading-agent",
+  "version": "0.1.0",
+  "description": "AI-driven Solana on-chain trading agent for OKX Agentic Wallet",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "tsx src/index.ts",
+    "build": "tsc",
+    "scan": "tsx src/scripts/scan-tokens.ts",
+    "backtest": "tsx src/scripts/backtest.ts",
+    "notify:test": "tsx src/utils/notify.ts"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.95.4",
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "bs58": "^6.0.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.2"
+  }
+}
